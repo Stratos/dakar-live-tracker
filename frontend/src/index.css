@@ -1,0 +1,17 @@
+/* Leaflet DEBE ir PRIMERO */
+@import 'leaflet/dist/leaflet.css';
+
+/* Luego Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix para que el mapa no se parta */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-tile-container {
+  transform: none !important;
+}
